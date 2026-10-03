@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class WasteStatus {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Waste Collected (kg): ");
+        double waste = sc.nextDouble();
+
+        if (waste >= 100) {
+            System.out.println("Collection Target Achieved");
+        } else {
+            System.out.println("More Waste Collection Required");
+            sc.close();
+        }
+    }
+}
